@@ -12,11 +12,11 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   // If no route, redirect to /principal
-  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
-  { path: 'inicio', component: HomeComponent, },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent, },
   { path: 'login', component: LoginComponent, },
-  { path: 'exito', component: SuccessComponent, canActivate: [AuthGuard] },
-  { path: '**', redirectTo: '/inicio' }
+  { path: 'success', component: SuccessComponent, canActivate: [AuthGuard] },
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({
