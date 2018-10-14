@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+.top-margin {
+  margin-top: 2%;
+}
+.center-tag {
+  margin: auto;
+}
+.main-background {
+  background-color: lightgray;
+  border: 2px solid black;
+  border-radius: 25px;
+  height: 100%;
+}
+.main-button {
+  /* background-color: blue; */
+  /* color: white; */
+  width: 300px;
+  display: block;
+  margin: 3% auto;
+}
