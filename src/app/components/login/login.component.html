@@ -20,7 +20,10 @@
               </mat-form-field>
             </div>
 
-            <button class="btn btn-success" [disabled]="this.loginForm.invalid">Submit</button>
+            <div class="btn-group">
+              <button class="btn btn-success" [disabled]="this.loginForm.invalid">Submit</button>
+              <a [routerLink]="['/home']" class="btn btn-primary">Go back</a>
+            </div>
 
           </form>
       </div>
