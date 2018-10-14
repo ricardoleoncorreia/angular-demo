@@ -1,3 +1,30 @@
-<p>
-  login works!
-</p>
+<div class="main-background">
+  <div class="row top-margin">
+    <h1 class="center-tag">Login Form</h1>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center">
+
+      <div class="login-form">
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+              
+            <div class="col-12 text-center">
+              <mat-form-field>
+                <input matInput placeholder="Username" formControlName="username">
+              </mat-form-field>
+            </div>
+              
+            <div class="col-12 text-center">
+              <mat-form-field>
+                <input matInput type="password" placeholder="Password" formControlName="password">
+              </mat-form-field>
+            </div>
+
+            <button class="btn btn-success" [disabled]="this.loginForm.invalid">Submit</button>
+
+          </form>
+      </div>
+
+    </div>
+  </div>
+</div>

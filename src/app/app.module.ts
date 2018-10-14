@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// Import ngModel
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 // Material imports
 import { MatButtonModule,
          MatDialogModule,
@@ -38,6 +41,8 @@ import { HomeComponent } from './components/home/home.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatButtonModule,
     MatDialogModule,
     MatFormFieldModule,

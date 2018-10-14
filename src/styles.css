@@ -19,9 +19,16 @@ body { margin: 0; font-family: 'Roboto', sans-serif; }
   height: 100%;
 }
 .main-button {
-  /* background-color: blue; */
-  /* color: white; */
   width: 300px;
   display: block;
   margin: 3% auto;
+}
+.login-form {
+  display: inline-block;
+  background: white;
+  padding: 2%;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-top: 2%;
+  margin-bottom: 3%;
 }
