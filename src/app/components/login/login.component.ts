@@ -27,8 +27,6 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     localStorage.setItem('token', this.token);
     this.router.navigate(['/success']);
-    console.log(this.loginForm.get('username').invalid);
-    // localStorage.clear();
   }
 
   // This method builds the form
