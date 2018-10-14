@@ -25,6 +25,10 @@ import { MatButtonModule,
          MatTableModule,
          MatTabsModule,
          MatTooltipModule } from '@angular/material';
+
+// HighCharts
+import { ChartModule } from 'angular-highcharts';
+
 import { RoutingModule } from './/routing.module';
 import { SuccessComponent } from './components/success/success.component';
 import { LoginComponent } from './components/login/login.component';
@@ -66,6 +70,7 @@ import { HighchartsComponent } from './components/highcharts/highcharts.componen
     MatTableModule,
     MatTabsModule,
     MatTooltipModule,
+    ChartModule,
     RoutingModule,
   ],
   providers: [],
