@@ -9,6 +9,9 @@ body { margin: 0; font-family: 'Roboto', sans-serif; }
 .top-margin {
   margin-top: 2%;
 }
+.bottom-margin {
+  margin-bottom: 2%;
+}
 .top-padding-title {
   padding-top: 3%;
   font-size: 3em;
