@@ -1,4 +1,9 @@
 <div class="mat-elevation-z8 display-inline-block">
+
+  <mat-form-field class="filter-margin">
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+  </mat-form-field>
+
   <table mat-table #table [dataSource]="dataSource" matSort aria-label="Elements" class="full-width">
     <!-- Id Column -->
     <ng-container matColumnDef="id">

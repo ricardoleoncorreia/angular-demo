@@ -16,7 +16,6 @@ export class SampleTableComponent implements OnInit {
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
   displayedColumns = ['id', 'name'];
 
-  // TODO: replace this with real data from your application
   sampleData: any[] = [
     {id: 1, name: 'Hydrogen'},
     {id: 2, name: 'Helium'},
@@ -43,4 +42,19 @@ export class SampleTableComponent implements OnInit {
   ngOnInit() {
     this.dataSource = new SampleTableDataSource(this.paginator, this.sort, this.sampleData);
   }
+
+  applyFilter(value: string): void {
+    this.dataSource = new SampleTableDataSource(
+                            this.paginator,
+                            this.sort,
+                            this.sampleData.filter(this.filterElement(value)));
+  }
+
+  filterElement(valueToCompare: string) {
+    const lowerValueToCompare = valueToCompare.toLowerCase();
+    return function(filterValue) {
+      return filterValue.name.toLowerCase().includes(lowerValueToCompare);
+    };
+  }
+
 }
