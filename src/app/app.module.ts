@@ -36,6 +36,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AngularMaterialComponentsComponent } from './components/angular-material-components/angular-material-components.component';
 import { AngularMaterialTablesComponent } from './components/angular-material-tables/angular-material-tables.component';
 import { HighchartsComponent } from './components/highcharts/highcharts.component';
+import { SampleTableComponent } from './components/sample-table/sample-table.component';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { HighchartsComponent } from './components/highcharts/highcharts.componen
     HomeComponent,
     AngularMaterialComponentsComponent,
     AngularMaterialTablesComponent,
-    HighchartsComponent
+    HighchartsComponent,
+    SampleTableComponent
   ],
   imports: [
     BrowserModule,
